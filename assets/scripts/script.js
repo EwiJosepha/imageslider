@@ -3,8 +3,7 @@
 const imag = document.getElementById('imgs')
 const button1 = document.getElementById('left')
 const button2 = document.getElementById('right')
-  
-// let container=document.querySelector('container')
+  // let container=document.querySelector('container')
 const immg = document.querySelectorAll('#imgs img')
 
 // console.log(immg)
@@ -24,7 +23,7 @@ function changee () {
     console.log(changee)
   }
 
-  imag.style.transform = `translateX(${-indexxx * 500}px)`;
+  imag.style.transform = `translateX(${-indexxx * 500}px)`
 }
 
 function resetInterval () {
