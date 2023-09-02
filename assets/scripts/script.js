@@ -3,7 +3,7 @@
 const imag = document.getElementById('imgs')
 const button1 = document.getElementById('left')
 const button2 = document.getElementById('right')
-  // let container=document.querySelector('container')
+// let container=document.querySelector('container')
 const immg = document.querySelectorAll('#imgs img')
 
 // console.log(immg)
