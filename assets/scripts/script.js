@@ -8,50 +8,46 @@ const immg = document.querySelectorAll('#imgs img')
 
 
 
-let immgLenght = immg.length
-let indexx = 0
-while(indexx < immgLenght ){
+// let immgLenght = immg.length
+// let indexx = 0
+// while(indexx < immgLenght ){
+// imag.style.transform = `translateX(${-indexx * 500}px)`
+// console.log(indexx);
+//   indexx++
+// }
 
-console.log(indexx);
-  indexx++
+
+let indexxx = 0
+let interval = setInterval(() => {
+  indexxx++
+  changee()
+}, 2000)
+
+function changee() {
+  if (indexxx > immg.length - 1) {
+    indexxx = 0
+  } else if (indexxx < 0) {
+    indexxx = immg.length - 1
+  }
+  imag.style.transform = `translateX(${-indexxx * 500}px)`
 }
 
+function resetInterval() {
+  clearInterval(interval)
+  interval = setInterval(() => {
+    indexxx++
+    changee()
+  }, 2000)
+}
 
-// console.log(immg)
-// let indexxx = 0
-// let interval = setInterval(run, 2000)
+button1.addEventListener('click', () => {
+  indexxx++
+  changee()
+  resetInterval()
+})
 
-// function run () {
-//   indexxx++
-//   changee()
-// }
-
-// function changee () {
-//   if (indexxx > immg.length - 1) {
-//     indexxx = 0
-//   } else if (indexxx < 0) {
-//     indexxx = immg.length - 1
-//     console.log(changee)
-//   }
-
-//   imag.style.transform = `translateX(${-indexxx * 500}px)`
-// }
-
-// function resetInterval () {
-//   clearInterval(interval)
-//   interval = setInterval(run, 2000)
-// }
-
-// button1.addEventListener('click', () => {
-//   indexxx++
-
-//   changee()
-//   resetInterval()
-// })
-
-// button2.addEventListener('click', () => {
-//   indexxx--
-
-//   changee()
-//   resetInterval()
-// })
+button2.addEventListener('click', () => {
+  indexxx--
+  changee()
+  resetInterval()
+})
