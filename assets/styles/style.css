@@ -39,25 +39,27 @@ img {
 }
 
 #left {
-  background-color: #7fff00;
+  background-color: #ffa500;
   width: 200px;
   height: 30px;
   border: none;
   cursor: pointer;
+  color: #fff;
 }
 
 #left:hover {
-  background-color: #f5f5dc;
+  background-color: #383833;
 }
 
 #right {
-  background-color: #ff1493;
+  background-color: #ffa500;
   width: 200px;
   height: 30px;
   border: none;
   cursor: pointer;
+  color: #fff;
 }
 
 #right:hover {
-  background-color: #f5f5dc;
+  background-color: #4f4f49;
 }
