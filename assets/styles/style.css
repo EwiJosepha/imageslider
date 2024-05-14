@@ -1,8 +1,5 @@
 body {
   background: linear-gradient(to bottom, #222121 50%, #3b3939 50%);
-
-  /* height: 700px;
-  width: 600px; */
 }
 
 h1 {
@@ -11,14 +8,15 @@ h1 {
 }
 
 .container {
-  /* justify-content: center; */
   box-shadow: 2px 2px 5px #000;
   height: 530px;
   width: 500px;
   overflow: hidden;
   margin: 0 auto;
   border-radius: 10px;
-  padding-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid orange;
 }
 
 img {
@@ -45,6 +43,7 @@ img {
   border: none;
   cursor: pointer;
   color: #fff;
+  border-radius: 2px;
 }
 
 #left:hover {
@@ -58,6 +57,7 @@ img {
   border: none;
   cursor: pointer;
   color: #fff;
+  border-radius: 2px;
 }
 
 #right:hover {
